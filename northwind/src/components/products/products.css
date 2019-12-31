@@ -1,0 +1,29 @@
+.products > table {
+    margin: auto;
+}
+
+.products > table, .products th, .products td {
+    border: 1px solid blue;
+}
+
+.products td:first-child {
+    text-align: left;
+    padding: 10px;
+}
+
+.products tr:nth-child(even) { /* כל שורה זוגית */
+    background-color: lightcoral;
+}
+
+.products tr:nth-child(odd) { /* כל שורה אי-זוגית */
+    background-color: lightgreen;
+}
+
+.products thead > tr:first-child { /* שורה ראשונה בכותרת */
+    background-color: lightgray;
+}
+
+.products {
+    height: 90%;
+    overflow: auto;
+}

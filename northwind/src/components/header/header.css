@@ -1,0 +1,12 @@
+.header {
+    height: 100%;
+}
+
+.header > h1 {
+    margin: 0;
+
+    /* Vertical Center: */
+    position :relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
