@@ -11,7 +11,9 @@
   - Hello world component
   - Hooks
   - useState
+  - Toggle text
   - useEffect
+  - self destruct component
 
 - Forms
   - controlled

@@ -1,0 +1,9 @@
+$color : red;
+
+.hello {
+    background-color: $color;
+
+    h1 { // .hello h1 { ... }
+        font-size: 20px;    
+    }
+}
