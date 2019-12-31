@@ -6,7 +6,12 @@
 
 ### Course plan
 
-- 
+- Function component
+  - props
+  - Hello world component
+  - Hooks
+  - useState
+  - useEffect
 
 - Forms
   - controlled
