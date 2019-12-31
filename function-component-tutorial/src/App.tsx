@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Hello from './components/Hello/Hello';
 import HelloFunction from './components/Hello/HelloFunction';
 import Countdown from './components/Countdown/Countdown';
-import { render } from '@testing-library/react';
+import CountdownFunc from './components/Countdown/CountdownFunc';
+// import { render } from '@testing-library/react';
 
 // class App ... {
 //     destroyCb = () => {
@@ -29,8 +30,13 @@ const App: React.FC = () => {
             <h1>Countdown</h1>
 
             {
-                isVisible && <Countdown destroyCb={() => setIsVisible(false)} />
+                /*isVisible && <Countdown destroyCb={() => setIsVisible(false)} />*/
             }
+
+            {
+                isVisible && <CountdownFunc destroyCb={() => setIsVisible(false)} />
+            }
+
 
         </div>
     );

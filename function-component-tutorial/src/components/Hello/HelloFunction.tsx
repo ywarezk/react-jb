@@ -41,7 +41,7 @@ const Hello: React.FC<IHelloProps> = (props) => {
         lastName: 'Katz'
     })
 
-    const toggleVisibility = () => {
+    const toggleVisibility = function rotem() {
         setIsVisible(!isVisible)
     }
 

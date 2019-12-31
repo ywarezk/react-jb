@@ -11,20 +11,31 @@ interface ICountdownState {
 }
 
 export default class Countdown extends React.Component<ICountdownProps, ICountdownState> {
+    private counterId: any;
+
     state = {
         counter: 5
     }
 
+    toggleVisibility = () => {
+        // ... this is always the instance
+    }
+
     componentDidMount() {
+        // this can change
+
         // const bigArray = [...]
 
-        setInterval(() => {
+        this.counterId = setInterval(() => {
             // bigArray.push()
 
-            if (this.state.counter === 0) {
-                this.props.destroyCb();
-            }
 
+            // if (this.state.counter <= 0) {
+            //     this.props.destroyCb();
+            //     return;
+            // }
+
+            console.log('set state');
             this.setState((prevState) => {
 
 
@@ -35,6 +46,19 @@ export default class Countdown extends React.Component<ICountdownProps, ICountdo
             });
 
         }, 1000);
+    }
+
+    // cleaning up
+    componentWillUnmount() {
+        console.log('clear interval');
+        clearInterval(this.counterId);
+    }
+
+    componentDidUpdate() {
+        if (this.state.counter <= 0) {
+            this.props.destroyCb();
+            return;
+        }
     }
 
     render() {
