@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Login from './components/Login/Login';
 import LoginFuncAlexandra from './components/Login/LoginFunc';
-import LoginControlled from './components/Login/LoginControlled';
+import LoginControlledMati from './components/Login/LoginControlled';
 import LoginControlledFunc from './components/Login/LoginControlledFunc';
 
 function App() {
@@ -16,14 +16,14 @@ function App() {
       <Login /> <br/>
 
       <h2>Function</h2>
-      <LoginFuncAlexandra />
+      <LoginFuncAlexandra  />
 
       <h1>
         Controlled
       </h1>
 
       <h2>Class</h2>
-      <LoginControlled />
+      <LoginControlledMati title="hello world" />
 
       <h2>Function</h2>
 
