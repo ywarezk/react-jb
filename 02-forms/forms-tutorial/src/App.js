@@ -5,6 +5,7 @@ import Login from './components/Login/Login';
 import LoginFuncAlexandra from './components/Login/LoginFunc';
 import LoginControlledMati from './components/Login/LoginControlled';
 import LoginControlledFunc from './components/Login/LoginControlledFunc';
+import LoginFormik from './components/Login/LoginFormik';
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
       <h2>Function</h2>
 
       <LoginControlledFunc />
+
+      <h2>Formik</h2>
+
+      <LoginFormik />
     </div>
   );
 }

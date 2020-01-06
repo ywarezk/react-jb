@@ -8,7 +8,8 @@
 
  import React from 'react';
  import {Formik, Form, Field, ErrorMessage} from 'formik';
- import yup from 'yup';
+ import * as yup from 'yup';
+ import userService from '../../services/users.service';
 
  const loginSchema = yup.object().shape({
      email: yup.string().email('shimon said better mail').required(),
@@ -19,6 +20,7 @@
      // values => {email: '...', password: '...'}
      const handleLogin = (values) => {
         console.log(values);
+        userService.login(values);
      }
 
     return (

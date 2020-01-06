@@ -2,7 +2,7 @@
 
 ### Video Lectures
 
-- playlist: https://youtu.be/bVPMCmTN__Q
+- playlist: https://www.youtube.com/watch?v=bVPMCmTN__Q&list=PLnHa2cF4cNDtfkYKO6v069GUPYrJtijwc
 
 ### Course plan
 
